@@ -10,7 +10,7 @@ services:
     volumes:
       - disk-data:/data
       - ./readonly-data:/readonly:ro
-    mem_limit: 128m
+    mem_limit: 256m
     cpus: 0.5
     restart: unless-stopped
     healthcheck:
