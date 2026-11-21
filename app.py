@@ -40,6 +40,9 @@ class Handler(BaseHTTPRequestHandler):
         self.end_headers()
         self.wfile.write(json.dumps(obj, ensure_ascii=False).encode())
 
-if __name__ == '__main__':
+def main():
     port = int(os.environ.get('PORT', 8009))
     HTTPServer(('0.0.0.0', port), Handler).serve_forever()
+
+if __name__ == '__main__':
+    main()
