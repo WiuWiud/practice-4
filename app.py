@@ -4,6 +4,11 @@ import shutil
 from http.server import HTTPServer, BaseHTTPRequestHandler
 from urllib.parse import urlparse
 
+def check_disk(value):
+    if value >= 80:
+        return "warning"
+    return "ok"
+
 class Handler(BaseHTTPRequestHandler):
     def do_GET(self):
         path = urlparse(self.path).path
