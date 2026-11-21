@@ -1,5 +1,5 @@
 import unittest
-from app import check_disk
+from disk_check import check_disk
 
 class TestDisk(unittest.TestCase):
     def test_warning_starts_at_threshold(self):
