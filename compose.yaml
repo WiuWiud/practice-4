@@ -11,6 +11,7 @@ services:
       - disk-data:/data
       - ./readonly-data:/readonly:ro
     mem_limit: 128m
+    cpus: 0.5
     restart: unless-stopped
     healthcheck:
       test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8009/health')"]

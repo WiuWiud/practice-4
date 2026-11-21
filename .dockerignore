@@ -3,3 +3,10 @@ __pycache__
 *.pyc
 *.log
 data/
+*.tmp
+.vscode
+.github
+tests
+*.md
+!README.md
+.env
