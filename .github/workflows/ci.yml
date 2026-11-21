@@ -48,7 +48,7 @@ jobs:
         run: |
           cp disk_check.py dist/
           cp README.md dist/
-          cp Dockerfile dist/
+          cp dockerfile dist/
           cp settings.json.example dist/
 
       - name: Generate manifest
