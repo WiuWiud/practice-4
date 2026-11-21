@@ -5,7 +5,7 @@ from http.server import HTTPServer, BaseHTTPRequestHandler
 from urllib.parse import urlparse
 
 def check_disk(value):
-    if value >= 80:
+    if value > 80:
         return "warning"
     return "ok"
 
