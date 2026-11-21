@@ -26,3 +26,6 @@ jobs:
         
       - name: Check for main function
         run: python -c "import app; assert hasattr(app, 'main'), 'function main not found'"
+
+      - name: Run unit tests
+        run: python -m unittest discover -s tests -v
